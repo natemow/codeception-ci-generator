@@ -317,5 +317,3 @@ echo -e $Color_Off
 if [[ $1 != "--testing" ]]; then
   rm -f ../$0
 fi
-
-cd $PROJECT
