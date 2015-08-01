@@ -45,4 +45,3 @@ And to use `performSweetNewAction` in a test, do this:
       }
 
     }
-
