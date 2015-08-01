@@ -1,10 +1,8 @@
 # Codeception + CI PHP project generator
 
-[![Circle CI](https://circleci.com/gh/natemow/codeception-ci-generator.svg?style=svg)](https://circleci.com/gh/natemow/codeception-ci-generator) [![Build Status](https://travis-ci.org/natemow/codeception-ci-generator.svg?branch=master)](https://travis-ci.org/natemow/codeception-ci-generator)
+[![Build Status](https://travis-ci.org/natemow/codeception-ci-generator.svg?branch=master)](https://travis-ci.org/natemow/codeception-ci-generator) [![Circle CI](https://circleci.com/gh/natemow/codeception-ci-generator.svg?style=svg)](https://circleci.com/gh/natemow/codeception-ci-generator)
 
-This is a shell installer that will create a PHP stub project that has [Codeception](http://codeception.com/) testing, [CircleCI](https://circleci.com/) and/or [TravisCI](https://travis-ci.org/) continuous integration baked in. Just grab and run `codeception-ci-generator.sh` to experience the magic.
-
-Quickie:
+This is a shell installer that will create a PHP stub project that has [Codeception](http://codeception.com/) testing, [TravisCI](https://travis-ci.org/) and/or [CircleCI](https://circleci.com/) continuous integration baked in. Just grab and run `codeception-ci-generator.sh` to experience the magic:
 
     git clone --quiet --depth 1 git@github.com:natemow/codeception-ci-generator.git
     mv c*/*.sh ./ && chmod +x ./*.sh

@@ -16,8 +16,8 @@
 
 # Begin setup stuff.
 echo -e $Green"
-This script will create a stub PHP project with Codeception tests, CircleCI
-and/or TravisCI continuous integration in the directory provided."$Color_Off
+This script will create a stub PHP project with Codeception tests, TravisCI
+and/or CircleCI continuous integration in the directory provided."$Color_Off
 
 if [[ $1 = "--testing" ]]; then
   TYPE=$2
@@ -300,7 +300,7 @@ Building Codeception suite and running \"%s\" tests...
 
 # Print confirmation.
 echo -e $Green
-printf "Great, you're all set to use Codeception, CircleCI and/or TravisCI in
+printf "Great, you're all set to use Codeception, TravisCI and/or CircleCI in
 your new \"%s\" project! To re-run the Codeception test suite locally use:
 
   ./vendor/bin/codecept --steps run %s
