@@ -270,10 +270,8 @@ Cloning from:" $CLONE
       git clone --quiet --depth 1 $CLONE app
       rm -rf app/.git
     fi
-  fi
 
-  # Set up database.
-  if [[ $1 != "--testing" ]]; then
+    # Set up database.
     mysql -u$MYSQL_USER_NAME -p$MYSQL_USER_PASS -e "CREATE DATABASE $PROJECT;"
   fi
 
@@ -303,8 +301,8 @@ echo -e $Green
 printf "Great, you're all set to use Codeception, TravisCI and/or CircleCI in
 your new \"%s\" project! To re-run the Codeception test suite locally use:
 
-  ./vendor/bin/codecept --steps run %s
-" $PROJECT $PROJECT
+  cd %s && ./vendor/bin/codecept --steps run %s
+" $PROJECT $PROJECT $PROJECT
 echo -e $Color_Off
 printf "Your \"%s\" project looks like this:
 " $PROJECT
