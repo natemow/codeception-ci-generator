@@ -14,7 +14,7 @@ Supported project types:
 * Generic PHP project
 * [Drupal 7.x](https://www.drupal.org/project/drupal)
 * [Drupal 8.x](https://www.drupal.org/project/drupal)
-* [Vökuró Phalcon 1.3.x](https://github.com/phalcon/vokuro)
+* [Phalcon 1.3.x (using Vökuró sample)](https://github.com/phalcon/vokuro)
 
 ### Tests
 

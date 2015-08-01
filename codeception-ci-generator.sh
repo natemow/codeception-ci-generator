@@ -93,7 +93,7 @@ What type of project is this? (1|2|3|4):
     1) Generic PHP
     2) Drupal 7.x
     3) Drupal 8.x
-    4) Phalcon 1.3.x (Vökuró sample)"
+    4) Phalcon 1.3.x (using Vökuró sample)"
 
   read TYPE
 fi
@@ -299,7 +299,7 @@ Building Codeception suite and running \"%s\" tests...
 # Print confirmation.
 echo -e $Green
 printf "Great, you're all set to use Codeception, TravisCI and/or CircleCI in
-your new \"%s\" project! To re-run the Codeception test suite locally use:
+your new \"%s\" project! To re-run the Codeception test suite:
 
   cd %s && ./vendor/bin/codecept --steps run %s
 " $PROJECT $PROJECT $PROJECT
