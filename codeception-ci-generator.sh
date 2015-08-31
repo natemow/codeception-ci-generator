@@ -164,7 +164,9 @@ find ./tests -type f -name '*' | xargs sed -i 's/MYSQL_USER_NAME/'$MYSQL_USER_NA
 find ./tests -type f -name '*' | xargs sed -i 's/MYSQL_USER_PASS/'$MYSQL_USER_PASS'/g';
 # Move dist stuff around.
 mv tests/project.suite.yml tests/$PROJECT.suite.yml;
-mv tests/_bootstrap/bootstrap.php tests/_bootstrap/$PROJECT.php;
+if [[ -f "tests/_bootstrap/bootstrap.php" ]]; then
+  mv tests/_bootstrap/bootstrap.php tests/_bootstrap/$PROJECT.php;
+fi;
 mv tests/composer.json ./;
 mv tests/circle.yml ./;
 mv tests/.travis.yml ./;
